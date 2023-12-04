@@ -1,0 +1,157 @@
+/* Font face for Tomatoes font */
+@font-face {
+    font-family: 'Tomatoes';
+    src: url('Tomatoes-O8L8.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8ffd2;
+    text-align: center;
+}
+
+header {
+    background-color: #009246;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    margin-left: -20px;
+    margin-right: -2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+#logo {
+    margin-left: 5vh;
+    max-height: 80px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #D0F288;
+}
+
+#home {
+    width: 100vw;
+    overflow: hidden;
+}
+
+#home img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+section {
+    background-color: #ce2b37;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #ffffff;
+    font-family: 'Tomatoes';
+    font-size: 42px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
+}
+
+.grid-container img {
+    align-items: center;
+    max-height: 90vh;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location,
+.contactus,
+.aboutus {
+    background-color: #009246;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.location p,
+.contactus p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.location {
+    background-color: #ce2b37;
+}
+
+.aboutus {
+    background-color: #009246;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.aboutus h2 {
+    color: #fff;
+    font-family: 'Tomatoes', sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.aboutus p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.menu {
+    max-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+.chat-bot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-bot {
+    display: none;
+    width: 350px;
+    height: 430px;
+    border: none;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 24px 36px; /* Increased padding for larger size */
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Other styles remain unchanged */

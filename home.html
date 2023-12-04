@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ 
+    <title>Bistro D'Italia</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img id="logo" src="logo.png" alt="Logo">
+            <nav>
+                <a href="#container">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <div id="home">
+            <img src="banner_main.jpg" alt="Delicious Food Banner">
+        </div>
+
+        <section id="menu">
+            <h2>Our Tasty Menu</h2>
+            <div class="grid-container">
+                <img src="menu_main.png" alt="Menu item 1">
+                
+            </div>
+            
+        </section>
+    </div>
+    <div class="maincontainer">
+        <section id="aboutus" class="aboutus">
+            <h2>About Us</h2>
+            <p>Welcome to Bistro D'Italia – your gateway to authentic Italian flavors! Our exquisite menu showcases the best of Italian cuisine, featuring mouthwatering pizzas, soul-satisfying pasta, and freshly baked garlic bread. Our chefs blend traditional recipes with modern flair, creating a symphony of flavors that invite you to savor the essence of Italy.
+
+                At Bistro D'Italia, we believe in crafting memorable dining experiences in a warm and inviting ambiance. Join us for a celebration of good food, good company, and the true spirit of Italy. Buon Appetito!</p>
+        </section>
+        <section id="location" class="location">
+            <h2>Find Us</h2>
+            <p>Bistro D'Italia
+                ,123 Via del Gusto, 
+                Trattoria City, Tuscany
+                Italy</p>
+        </section>
+
+        
+
+        <section id="contactus" class="contactus">
+            <h2>Get in Touch</h2>
+            <p>Have questions or want to place an order? Call us at +91791234567 or email us at info@bistroditalia.com</p>
+        </section>
+
+        <div class="chat-bot-container">
+            <button id="toggleChatBot" onclick="toggleChatBot()">Order Now</button>
+            <iframe class="chat-bot" id="chatBotIframe" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/e1349ae8-3de9-48f6-bee6-b6ed329c792a"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function toggleChatBot() {
+            var chatBotIframe = document.getElementById('chatBotIframe');
+            chatBotIframe.style.display = (chatBotIframe.style.display === 'none' || chatBotIframe.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
